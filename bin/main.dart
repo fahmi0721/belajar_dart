@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 void main() async {
   Uri url = Uri.parse(
       "https://study-flutter-b152a-default-rtdb.asia-southeast1.firebasedatabase.app/orang.json");
-  var response = await http.post(url,
+  await http.post(url,
       body: jsonEncode({
         "id": 1,
         "email": "mailto:joni@gmail.com",
